@@ -6,65 +6,47 @@ input.onButtonEvent(Button.A, input.buttonEventClick(), function () {
 input.onButtonEvent(Button.AB, input.buttonEventClick(), function () {
     Dino_oben = game.createSprite(1, 1)
     basic.pause(500)
-    for (let index = 0; index < randint(30, 50); index++) {
+    for (let index = 0; index < randint(1, 10); index++) {
         Kaktus_oben = game.createSprite(4, 1)
         basic.pause(500)
         Kaktus_oben.change(LedSpriteProperty.X, -1)
+        basic.pause(500)
+        Kaktus_oben.change(LedSpriteProperty.X, -1)
+        basic.pause(500)
         if (Dino_oben.isTouching(Kaktus_oben)) {
             game.removeLife(1)
         }
-        basic.pause(500)
         Kaktus_oben.change(LedSpriteProperty.X, -1)
         if (Dino_oben.isTouching(Kaktus_oben)) {
             game.removeLife(1)
         }
         basic.pause(500)
         Kaktus_oben.change(LedSpriteProperty.X, -1)
-        if (Dino_oben.isTouching(Kaktus_oben)) {
-            game.removeLife(1)
-        }
         basic.pause(500)
         Kaktus_oben.change(LedSpriteProperty.X, -1)
-        if (Dino_oben.isTouching(Kaktus_oben)) {
-            game.removeLife(1)
-        }
-        basic.pause(500)
-        Kaktus_oben.change(LedSpriteProperty.X, -1)
-        if (Dino_oben.isTouching(Kaktus_oben)) {
-            game.removeLife(1)
-        }
         Kaktus_oben.delete()
     }
     game.setLife(10)
     Dino = game.createSprite(1, 4)
     basic.pause(500)
-    for (let index = 0; index < randint(30, 50); index++) {
+    for (let index = 0; index < randint(1, 10); index++) {
         Kaktus = game.createSprite(4, 4)
         basic.pause(500)
         Kaktus.change(LedSpriteProperty.X, -1)
+        basic.pause(500)
+        Kaktus.change(LedSpriteProperty.X, -1)
+        basic.pause(500)
         if (Dino.isTouching(Kaktus)) {
             game.removeLife(1)
         }
-        basic.pause(500)
         Kaktus.change(LedSpriteProperty.X, -1)
         if (Dino.isTouching(Kaktus)) {
             game.removeLife(1)
         }
         basic.pause(500)
         Kaktus.change(LedSpriteProperty.X, -1)
-        if (Dino.isTouching(Kaktus)) {
-            game.removeLife(1)
-        }
         basic.pause(500)
         Kaktus.change(LedSpriteProperty.X, -1)
-        if (Dino.isTouching(Kaktus)) {
-            game.removeLife(1)
-        }
-        basic.pause(500)
-        Kaktus.change(LedSpriteProperty.X, -1)
-        if (Dino.isTouching(Kaktus)) {
-            game.removeLife(1)
-        }
         Kaktus.delete()
     }
 })
